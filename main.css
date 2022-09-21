@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+body{
+    color: white;
+    background-color: black;
+      font-family: 'Press Start 2P', sans-serif;
+
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.info p{
+    align-self:flex-start;
+    margin: 0px;
+}
+.again,.check{
+ border-radius: 0px;
+    padding: 20px 40px;
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 16px;
+    border: none;
+
+}
+.head{
+    margin-bottom: 20px;
+}
+.head h1{
+color: white;
+margin-bottom: 40px;
+text-align: center;
+}
+.head h2{
+    background-color: white;
+    color: black;
+    width: fit-content;
+    padding: 40px;
+    margin: auto;
+}
+
+
+.head h2::after {
+    content: "";
+    position: absolute;
+    height: 6px;
+    width: 100vw;
+    z-index: -1;
+    top: 21%;
+    background-color: white;
+    left: 0px;
+}
+
+.inputField{
+    display: flex;
+    flex-direction: column;
+    width:fit-content ;
+    align-items: center;
+        margin-right:5vw ;
+
+}
+.inputField button{
+        width:70%  !important;
+    display: flex;
+    justify-content: center;
+}
+
+.inputField input{
+    background-color: black;
+    border: white 4px solid;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 25px;
+      font-family: 'Press Start 2P', sans-serif;
+      text-align: center;
+      width:180px;
+      height: 70px;
+    }
+.result{
+ white-space:nowrap;
+}
+.content{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    margin: auto;
+}
+@media (max-width:542px) {
+    .content,.info{
+        flex-direction: column;
+        align-content: center;
+        justify-content: initial;
+        align-items: center;
+    }
+
+
+    .info button{
+        display: flex;
+        justify-content: center;
+        width: 30%;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .info p{
+margin: auto;
+    }
+    
+.head h2::after {
+    content: "";
+    position: absolute;
+    height: 6px;
+    width: 100vw;
+    z-index: -1;
+    top: 28%;
+    background-color: white;
+    left: 0px;
+}
+
+}
